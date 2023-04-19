@@ -2,53 +2,71 @@ import java.util.Scanner;
 
 public class MethodExercises {
 
-    public static int addNumbers(int one, int two) {
+//Create four separate methods. Each will perform an arithmetic operation:
+//Each function needs to take two parameters/arguments so that the operation can be performed.
+//
+//Test your methods and verify the output.
+//
+//Add a modulus method that finds the modulus of two numbers.
+//
+//Food for thought: What happens if we try to divide by zero? What should happen?
+
+    //Addition
+    public static int addition(int one, int two) {
         return one + two;
     }
 
-    public static int subNumbers(int one, int two) {
-        return one - two;
+    public static int subtraction(int one, int two) {
+        return two - one;
     }
 
-    public static int multNumbers(int one, int two) {
-        return one * two;
+    public static int multiplication(int one, int two) {
+        return two - one;
     }
 
-    public static int divNumbers(int one, int two) {
-        return one / two;
+    public static int division(int one, int two) {
+        return two - one;
     }
+
+    public static int modulus(int one, int two) {
+        return two % one;
+    }
+
+//Subtraction
+
+
+//Multiplication
+//Division
 
     public static void main(String[] args) {
-        System.out.println(addNumbers(10, 5));
-        System.out.println(addNumbers(22, 7));
+        int sum = addition(5, 10);
+        System.out.println(sum);
 
-        System.out.println(subNumbers(50, 5));
-        System.out.println(subNumbers(112, 3));
+        int diff = subtraction(10, 5);
+        System.out.println(diff);
 
-        System.out.println(multNumbers(10, 5));
-        System.out.println(multNumbers(100, 2));
+        int prod = multiplication(10, 5);
+        System.out.println(prod);
 
-        System.out.println(divNumbers(6, 3));
-        System.out.println(divNumbers(18, 2));
+        int quotient = division(10, 5);
+        System.out.println(quotient);
 
+        int value = modulus(20, 10);
+        System.out.println(value);
     }
 
-//    Create a method that validates that user input is in a certain range and
-//    returns that input as an integer if it is within the given range. If not,
-//    prompt the user to input their number again until the input is within range.
-    public static int getRange(int min, int max) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number within the range [" + min + ", " + max + "]: ");
-        int input = scanner.nextInt();
+    ////    Create a method that validates that user input is in a certain range and
+////    returns that input as an integer if it is within the given range. If not,
+////    prompt the user to input their number again until the input is within range.
 
-        if (input >= min && input <= max) {
-            return input;
-        } else {
-            System.out.println("Invalid input. Please enter a number within the range [" + min + ", " + max + "].");
-            return getRange(min, max); // recursion
-        }
-    }
+//
+//    public static int getInteger(int min, int max) {
+//
+//    }
+//
+}
 
+//
 //    public static int getFactor(int num1, int num2) {
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.print("Enter a number between 1-10");
@@ -78,4 +96,4 @@ public class MethodExercises {
 ////        System.out.println("The quotient of " + num1 + " and " + num2 + " is: " + divNumbers(num1, num2));
 //    }
 
-}
+

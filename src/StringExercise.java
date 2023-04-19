@@ -9,17 +9,6 @@ public class StringExercise {
 //    that contains the desired output and print it out to the console,
 //    you can do this with only one String variable and one print statement
 //    for each output example.
-//
-//
-//            We don't need no education
-//    We don't need no thought control
-//
-//    Check "this" out!, "s inside of "s!
-//
-//            In windows, the main drive is usually C:\
-//
-//    I can do backslashes \, double backslashes \\,
-//    and the amazing triple backslash \\\!
 
         String pinkFloyd = "We don't need no education";
         System.out.println(pinkFloyd);

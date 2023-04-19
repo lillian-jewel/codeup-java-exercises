@@ -3,44 +3,29 @@ import java.util.Scanner;
 public class ConsoleExercises {
     public static void main(String[] args) {
         double pi = 3.14159;
-        int shortPi = (int) pi;
-        System.out.format("The value of pi is approximately %d%n", shortPi);
+        System.out.format("%f%n", pi);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter an integer:");
-        int number = scanner.nextInt();
-        System.out.printf("You entered: %d%n", number);
+//        System.out.println("Enter a number: ");
+//        int userInput = input.nextInt();
+//        System.out.println("You entered : " + userInput);
+//
+//        System.out.println("Enter 3 words: ");
+//        String one = input.next();
+//        String two = input.next();
+//        String three = input.next();
+//        System.out.printf("You entered : %n%s %s %s%n", one, two, three);
 
+//        System.out.println("Enter a sentence: ");
+//        String sentence = input.nextLine();
+//        System.out.printf("You entered: %s", sentence);
 
-        System.out.println("Enter 3 words:");
-        String one = scanner.next();
-        String two = scanner.next();
-        String three = scanner.next();
-        System.out.printf("You entered: %s, %s, %s%n", one, two, three);
-
-
-        System.out.println("Enter a sentence:");
-        scanner.nextLine();
-        String sentence = scanner.nextLine();
-        System.out.printf("You said: %s%n", sentence);
-
-
-        System.out.println("Enter the width of classroom:");
-        String widthStr = scanner.nextLine();
-        double width = Double.parseDouble(widthStr);
-
-        System.out.println("Enter the length of classroom:");
-        String lengthStr = scanner.nextLine();
-        double length = Double.parseDouble(lengthStr);
-
-        double area = width * length;
-        double perim = (width * length) * 2;
-
-        System.out.printf("Area of the classroom is %s feet %n", area);
-        System.out.printf("Perimeter of the classroom is %s feet %n", perim);
-
+        System.out.println("Enter the width of the classroom: ");
+        int width = input.nextInt();
+        System.out.println("Enter the length of the classroom: ");
+        int length = input.nextInt();
+        System.out.println("The area of the classroom is:" + (width * length));
+        System.out.println("The perimeter of the classroom is: " + ((width * 2) + (length * 2)));
     }
 }
-
-
